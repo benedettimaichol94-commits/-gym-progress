@@ -1,23 +1,18 @@
-GYM PROGRESS - VERSIONE ANDROID 0.3.0
+GYM PROGRESS - VERSIONE ANDROID 0.4.0
 
-Questa versione prepara il progetto web esistente per essere incorporato in un'app Android tramite Capacitor.
-L'APK viene generato gratuitamente con GitHub Actions.
+AGGIORNAMENTI 0.4
+- Intensità predefinita per esercizio: Cedimento tecnico oppure RIR 0/1 (un'unica opzione).
+- Le vecchie impostazioni RIR 0 e RIR 1 vengono visualizzate come RIR 0/1.
+- Le giornate continuano a salvare serie e ripetizioni programmate.
+- Durante l'allenamento si registrano separatamente kg, ripetizioni effettive, RIR effettivo e cedimento per ogni serie.
+- I risultati effettivi restano distinti dagli obiettivi programmati nello storico.
 
-FILE PRINCIPALI
-- index.html: applicazione Gym Progress
-- manifest.webmanifest e sw.js: supporto PWA/browser (non necessari nell'app nativa)
-- package.json: dipendenze Capacitor
-- capacitor.config.json: identificativo e nome dell'app Android
-- .github/workflows/build-android-apk.yml: compilazione automatica dell'APK
-
-COME SI OTTIENE L'APK
+COMPILAZIONE APK
 1. Caricare i file e le cartelle del progetto nella root del repository GitHub.
-2. Verificare che il workflow sia presente esattamente in .github/workflows/build-android-apk.yml.
-3. Aprire la scheda Actions del repository.
-4. Aprire "Build Gym Progress Android APK" e attendere il completamento.
-5. Scaricare l'artifact "Gym-Progress-Android-APK" e, al suo interno, app-debug.apk.
+2. Verificare che .github/workflows/build-android-apk.yml sia presente.
+3. Aprire Actions e avviare Build Gym Progress Android APK.
+4. A compilazione completata, scaricare l'artifact Gym-Progress-Android-APK.
+5. Estrarre l'artifact e installare app-debug.apk su Android.
 
-NOTA SUI DATI
-I dati di allenamento della versione attuale sono memorizzati localmente nel WebView tramite localStorage.
-Non vengono inviati a GitHub. Prima di un uso prolungato è consigliato esportare periodicamente il backup dall'app.
-La programmazione delle giornate salva serie e ripetizioni previste per esercizio. Ogni esercizio memorizza un obiettivo di intensità: cedimento tecnico, RIR 0 o RIR 1. Durante l’allenamento vengono registrati separatamente i risultati effettivi, senza confonderli con gli obiettivi programmati. La gestione dei file multimediali molto grandi e la persistenza avanzata tramite database locale saranno migliorate nelle prossime versioni.
+DATI
+I dati sono memorizzati localmente nel WebView tramite localStorage e non vengono inviati a GitHub. Effettuare backup regolari dall'app. Non disinstallare l'app o cancellarne i dati prima di aver esportato un backup.
