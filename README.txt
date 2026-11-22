@@ -1,4 +1,4 @@
-GYM PROGRESS - VERSIONE ANDROID 0.2.0
+GYM PROGRESS - VERSIONE ANDROID 0.3.0
 
 Questa versione prepara il progetto web esistente per essere incorporato in un'app Android tramite Capacitor.
 L'APK viene generato gratuitamente con GitHub Actions.
@@ -20,4 +20,4 @@ COME SI OTTIENE L'APK
 NOTA SUI DATI
 I dati di allenamento della versione attuale sono memorizzati localmente nel WebView tramite localStorage.
 Non vengono inviati a GitHub. Prima di un uso prolungato è consigliato esportare periodicamente il backup dall'app.
-La gestione dei file multimediali molto grandi e la persistenza avanzata tramite database locale saranno migliorate nelle prossime versioni.
+La programmazione delle giornate salva serie e ripetizioni previste per esercizio. Ogni esercizio memorizza un obiettivo di intensità: cedimento tecnico, RIR 0 o RIR 1. Durante l’allenamento vengono registrati separatamente i risultati effettivi, senza confonderli con gli obiettivi programmati. La gestione dei file multimediali molto grandi e la persistenza avanzata tramite database locale saranno migliorate nelle prossime versioni.
