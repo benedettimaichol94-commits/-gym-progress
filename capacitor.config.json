@@ -1,0 +1,8 @@
+{
+  "appId": "it.gymprogress.app",
+  "appName": "Gym Progress",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  }
+}

@@ -1,20 +1,23 @@
-GYM PROGRESS - PROTOTIPO INIZIALE
+GYM PROGRESS - VERSIONE ANDROID 0.2.0
 
-Contenuto:
-- index.html: app responsive in italiano
-- manifest.webmanifest: metadati installazione PWA
-- sw.js: cache di base per funzionamento offline
+Questa versione prepara il progetto web esistente per essere incorporato in un'app Android tramite Capacitor.
+L'APK viene generato gratuitamente con GitHub Actions.
 
-Funzioni incluse:
-- Creazione/modifica/eliminazione giornate
-- Archivio esercizi con foto, video e spiegazioni
-- Registrazione serie con kg, ripetizioni, RIR e cedimento
-- Visualizzazione dell'ultimo risultato noto durante il workout
-- Storico allenamenti
-- Report mensile con allenamenti, serie, volume e cedimenti
-- Registrazione peso corporeo
-- Esportazione CSV e backup JSON
+FILE PRINCIPALI
+- index.html: applicazione Gym Progress
+- manifest.webmanifest e sw.js: supporto PWA/browser (non necessari nell'app nativa)
+- package.json: dipendenze Capacitor
+- capacitor.config.json: identificativo e nome dell'app Android
+- .github/workflows/build-android-apk.yml: compilazione automatica dell'APK
 
-NOTA TECNICA IMPORTANTE:
-Questa è una prima versione web/PWA locale. Per installarla come PWA deve essere pubblicata su un hosting HTTPS (ad esempio GitHub Pages). I dati sono salvati nel browser del dispositivo. Il backup JSON esporta anche i dati testuali e i media incorporati come data URL, ma file video grandi possono generare backup pesanti.
-Non è ancora un APK Android nativo né include sincronizzazione cloud. Il passaggio successivo è testarla e poi confezionarla con Capacitor/Android, aggiungendo eventualmente backup cloud.
+COME SI OTTIENE L'APK
+1. Caricare i file e le cartelle del progetto nella root del repository GitHub.
+2. Verificare che il workflow sia presente esattamente in .github/workflows/build-android-apk.yml.
+3. Aprire la scheda Actions del repository.
+4. Aprire "Build Gym Progress Android APK" e attendere il completamento.
+5. Scaricare l'artifact "Gym-Progress-Android-APK" e, al suo interno, app-debug.apk.
+
+NOTA SUI DATI
+I dati di allenamento della versione attuale sono memorizzati localmente nel WebView tramite localStorage.
+Non vengono inviati a GitHub. Prima di un uso prolungato è consigliato esportare periodicamente il backup dall'app.
+La gestione dei file multimediali molto grandi e la persistenza avanzata tramite database locale saranno migliorate nelle prossime versioni.
