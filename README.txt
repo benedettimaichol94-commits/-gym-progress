@@ -1,18 +1,21 @@
-GYM PROGRESS - VERSIONE ANDROID 0.4.0
+GYM PROGRESS - VERSIONE ANDROID 0.5
 
-AGGIORNAMENTI 0.4
-- Intensità predefinita per esercizio: Cedimento tecnico oppure RIR 0/1 (un'unica opzione).
-- Le vecchie impostazioni RIR 0 e RIR 1 vengono visualizzate come RIR 0/1.
-- Le giornate continuano a salvare serie e ripetizioni programmate.
-- Durante l'allenamento si registrano separatamente kg, ripetizioni effettive, RIR effettivo e cedimento per ogni serie.
-- I risultati effettivi restano distinti dagli obiettivi programmati nello storico.
+Funzioni incluse:
+- Creazione libera delle giornate e degli esercizi.
+- Programmazione di serie e ripetizioni previste.
+- Intensità: Cedimento tecnico oppure RIR 0/1.
+- Carico abituale salvato per ogni esercizio e precompilato nelle serie.
+- Promemoria per aumentare il carico alla prossima seduta.
+- Sequenza automatica delle giornate: dopo aver completato una giornata viene proposta la successiva. I giorni della settimana restano a scelta dell'utente.
+- Note salvate separatamente per ogni allenamento e consultabili nello storico.
+- Foto caricabili dal telefono, link a immagini e ricerca immagini online per correggere/sostituire le immagini.
+- Storico, report, peso corporeo ed esportazione backup.
 
-COMPILAZIONE APK
-1. Caricare i file e le cartelle del progetto nella root del repository GitHub.
-2. Verificare che .github/workflows/build-android-apk.yml sia presente.
-3. Aprire Actions e avviare Build Gym Progress Android APK.
-4. A compilazione completata, scaricare l'artifact Gym-Progress-Android-APK.
-5. Estrarre l'artifact e installare app-debug.apk su Android.
+IMPORTANTE SULLE IMMAGINI:
+La ricerca immagini apre una ricerca online; non assegna da sola una foto verificata all'esercizio. Scegli una foto corretta e caricala dal telefono oppure incolla un link diretto all'immagine. I link richiedono connessione.
 
-DATI
-I dati sono memorizzati localmente nel WebView tramite localStorage e non vengono inviati a GitHub. Effettuare backup regolari dall'app. Non disinstallare l'app o cancellarne i dati prima di aver esportato un backup.
+DATI:
+I dati sono salvati localmente sul dispositivo. Prima di installare una nuova versione, esportare un backup dall'app. Non disinstallare l'app o cancellarne i dati prima del backup.
+
+BUILD APK:
+Il workflow GitHub Actions presente in .github/workflows/build-android-apk.yml compila l'APK debug.
