@@ -24,3 +24,6 @@ Versione 0.7: durante l’allenamento puoi saltare un esercizio se il macchinari
 
 
 Versione 0.7: promemoria per aumentare il carico configurabile separatamente per ogni esercizio direttamente nella modifica di Le mie giornate. Il promemoria viene mostrato nella sessione successiva e si azzera al salvataggio della sessione.
+
+
+Novità v0.10: nella sezione Le mie giornate puoi modificare direttamente il carico abituale (kg) di ogni esercizio e salvarlo senza aprire l’archivio esercizi. Il carico aggiornato viene usato anche come valore iniziale nella registrazione della prossima sessione.
