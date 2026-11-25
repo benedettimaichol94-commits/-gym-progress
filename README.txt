@@ -19,3 +19,8 @@ I dati sono salvati localmente sul dispositivo. Prima di installare una nuova ve
 
 BUILD APK:
 Il workflow GitHub Actions presente in .github/workflows/build-android-apk.yml compila l'APK debug.
+
+Versione 0.7: durante l’allenamento puoi saltare un esercizio se il macchinario è occupato. L’esercizio resta nello storico come saltato e può essere recuperato prima di terminare la sessione.
+
+
+Versione 0.7: promemoria per aumentare il carico configurabile separatamente per ogni esercizio direttamente nella modifica di Le mie giornate. Il promemoria viene mostrato nella sessione successiva e si azzera al salvataggio della sessione.
